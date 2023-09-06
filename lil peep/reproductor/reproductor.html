@@ -51,11 +51,8 @@
     </main>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-                // Recupera la imagen seleccionada del LocalStorage
                 const imagenSeleccionada = localStorage.getItem('imagenSeleccionada');
-
                 if (imagenSeleccionada) {
-                    // Encuentra el elemento de imagen y configúralo con la imagen seleccionada
                     const imgElement = document.querySelector('.imgbx img');
                     imgElement.src = '../img/allimg/' + imagenSeleccionada;
                 }
